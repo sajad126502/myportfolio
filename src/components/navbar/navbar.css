@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
+.navbar-logo{
+   width: 100px;
+   height: 100px;
+   
+}
+.navbar-list-div{
+    width: 49%;
+}
+.navbar-list li a{
+    position: relative;
+    cursor: pointer;
+}
+.navbar-list li a span::after {
+   content: "";
+   background-color: #3e64ff;
+   width: 100%;
+   height: 2px;
+   position: absolute;
+   left: 0px;
+   bottom: -4px;
+   transform: scaleX(0);
+   transition: all 0.3s ease-in-out;
+
+
+    
+}
+.navbar-list li a:hover span::after {
+   
+ transform: scaleX(1);
+ 
+     
+ }
+.navbar-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
